@@ -1,0 +1,8 @@
+<div class="container">
+ <div class="col-sm-4" ng-repeat="laptop in laptops | filter:searchText | filter:searchBelow | filter:searchAbove">
+  <h4 class="text-center">{{laptop.name}}</h4>
+  <img width="100%" height="230" ng-src="{{laptop.srce}}">
+  <b><p class="text-center">Now @ Rs.{{laptop.price}}</p></b>
+  <p class="text-center">{{laptop.desc}}</p>
+ </div>
+</div>

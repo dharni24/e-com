@@ -1,0 +1,8 @@
+<div class="container">
+ <div class="col-sm-3" ng-repeat="clothe in clothes | filter:searchText | filter:searchBelow | filter:searchAbove">
+  <h4 class="text-center">{{clothe.name}}</h4>
+  <img width="100%" height="400" ng-src="{{clothe.srce}}">
+  <b><p class="text-center">Now @ Rs.{{clothe.price}}</p></b>
+  <p class="text-center">{{clothe.desc}}</p>
+ </div>
+</div>

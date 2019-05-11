@@ -1,0 +1,9 @@
+
+<div class="container">
+ <div class="col-sm-4" ng-repeat="mobile in mobiles | filter:searchText | filter:searchBelow | filter:searchAbove">
+  <h4 class="text-center" >{{mobile.name}}</h4>
+  <img width="100%" height="400" ng-src="{{mobile.srce}}" >
+  <b><p class="text-center">Now @ Rs.{{mobile.price}}</p></b>
+  <p class="text-center">{{mobile.desc}}</p>
+ </div>
+</div>
